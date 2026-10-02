@@ -2,9 +2,9 @@
 
 <img src="https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png" width="104" alt="Haxora" />
 
-# Haxora Next-Gen Haxball Client
+# Haxora — Next-Gen HaxBall Client
 
-**HaxBall için masaüstü istemcisi**
+**Windows için ücretsiz, bağımsız HaxBall client / masaüstü istemcisi**
 
 Tarayıcıda takılan oyun burada takılmıyor.
 
@@ -16,7 +16,7 @@ Tarayıcıda takılan oyun burada takılmıyor.
 [![İndirme](https://img.shields.io/github/downloads/nycr0x/Haxora-haxball-client/total?label=indirme&color=4f8fbd&style=flat-square)](https://github.com/nycr0x/Haxora-haxball-client/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-4f8fbd?style=flat-square)](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)
 
-**[⬇ İndir](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)** &nbsp;·&nbsp; **[🌐 Web sitesi](https://nycr0x.github.io/Haxora-haxball-client/)** &nbsp;·&nbsp; **[🐞 Sorun bildir](https://github.com/nycr0x/Haxora-haxball-client/issues)**
+**[⬇ İndir](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)** &nbsp;·&nbsp; **[🌐 Haxora HaxBall Client web sitesi](https://nycr0x.github.io/Haxora-haxball-client/)** &nbsp;·&nbsp; **[🐞 Sorun bildir](https://github.com/nycr0x/Haxora-haxball-client/issues)**
 
 </div>
 
