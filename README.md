@@ -2,9 +2,9 @@
 
 <img src="https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png" width="104" alt="Haxora" />
 
-# Haxora Next-Gen Haxball Client
+# Haxora — Next-Gen HaxBall Client
 
-**A desktop client for HaxBall**
+**A free, unofficial HaxBall client for Windows**
 
 The game that stutters in your browser doesn't stutter here.
 
@@ -17,7 +17,7 @@ The game that stutters in your browser doesn't stutter here.
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-4f8fbd?style=flat-square)](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)
 
 
-**[⬇ Download](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)** &nbsp;·&nbsp; **[🌐 Website](https://nycr0x.github.io/Haxora-haxball-client/)** &nbsp;·&nbsp; **[🐞 Report a problem](https://github.com/nycr0x/Haxora-haxball-client/issues)**
+**[⬇ Download](https://github.com/nycr0x/Haxora-haxball-client/releases/latest)** &nbsp;·&nbsp; **[🌐 Haxora HaxBall Client website](https://nycr0x.github.io/Haxora-haxball-client/)** &nbsp;·&nbsp; **[🐞 Report a problem](https://github.com/nycr0x/Haxora-haxball-client/issues)**
 
 </div>
 
