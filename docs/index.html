@@ -990,7 +990,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
    öznitelikler bir kez taranıp değiştiriliyor. Her düğümün kaynağı saklandığı
    için geçiş iki yönlü çalışıyor.
 
-   Dil sırayla şuradan geliyor: ?lang=en adresi > önceki seçim > tarayıcı dili.
+   Dil sırayla şuradan geliyor: ?lang=en adresi > önceki seçim > Türkçe.
    Seçim adrese de yazılıyor; böylece İngilizce sürümün paylaşılabilir bir
    bağlantısı oluyor (head'deki hreflang bunu gösteriyor). */
 var HX_LANG = (function () {
@@ -1135,9 +1135,7 @@ var HX_LANG = (function () {
     if (query === "en" || query === "tr") return query;
     var saved = stored();
     if (saved === "en" || saved === "tr") return saved;
-    var nav = "";
-    try { nav = String((navigator.languages && navigator.languages[0]) || navigator.language || "").toLowerCase(); } catch (e) {}
-    return nav.indexOf("tr") === 0 ? "tr" : "en";
+    return "tr";
   }
 
   /* Metin düğümleri girintiden dolayı satır sonu ve boşluk taşıyor; sözlükte
@@ -1227,6 +1225,11 @@ var HX_LANG = (function () {
     if (descriptionTag) descriptionTag.setAttribute("content", t(descriptionSource));
     var locale = document.querySelector('meta[property="og:locale"]');
     if (locale) locale.setAttribute("content", current === "en" ? "en_GB" : "tr_TR");
+    var pageUrl = "https://nycr0x.github.io/Haxora-haxball-client/" + (current === "en" ? "?lang=en" : "");
+    var canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute("href", pageUrl);
+    var ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute("content", pageUrl);
     sweep();
     var code = document.getElementById("langCode");
     var button = document.getElementById("langToggle");
