@@ -14,7 +14,7 @@
 <!-- Sayfa iki dilli. Çeviri yerinde yapılıyor ama İngilizcenin paylaşılabilir
      ve dizine girebilir kendi adresi olsun diye ?lang=en de kabul ediliyor. -->
 <link rel="alternate" hreflang="tr" href="https://nycr0x.github.io/Haxora-haxball-client/" />
-<link rel="alternate" hreflang="en" href="https://nycr0x.github.io/Haxora-haxball-client/?lang=en" />
+<link rel="alternate" hreflang="en" href="https://nycr0x.github.io/Haxora-haxball-client/en/" />
 <link rel="alternate" hreflang="x-default" href="https://nycr0x.github.io/Haxora-haxball-client/" />
 <link rel="icon" type="image/png" href="./site/Haxora_Icon.png" />
 <link rel="apple-touch-icon" href="./site/Haxora_Icon.png" />
@@ -626,6 +626,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
 .foot a:hover { color: #fff; }
 .disclaimer { max-width: 760px; margin: 14px 0 0; color: #92aaba; font-size: 10.5px; line-height: 1.55; }
 
+.more { margin-top: 22px; }
 .reveal { opacity: 0; transform: translateY(9px); transition: opacity .45s ease, transform .45s ease; }
 .reveal.in { opacity: 1; transform: none; }
 :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
@@ -754,7 +755,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
           <span class="meta-pill">Ücretsiz</span>
           <span class="meta-pill">Kurulum gerektirmez</span>
           <span class="meta-pill">Unofficial</span>
-          <span class="meta-pill" id="heroVersion">Son sürüm yükleniyor…</span>
+          <span class="meta-pill" id="heroVersion">Son sürüm</span>
         </div>
         <p class="hero-note">Haxora bağımsızdır. HaxBall ile resmi bir bağı veya onayı yoktur.</p>
       </div>
@@ -849,6 +850,10 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
           <p>Tema, görünüm ve tuş atamalarını koda çevirip arkadaşına yolla. Sana gelen kodu yapıştır, onun düzeni sende açılsın.</p>
         </article>
       </div>
+
+      <div class="more reveal">
+        <a class="btn" href="./ozellikler/">Tüm özellikleri gör</a>
+      </div>
     </div>
   </section>
 
@@ -868,6 +873,9 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
           <li class="reveal"><span class="n">3</span><div>Oyuncu adını seç ve odaya gir.</div></li>
         </ol>
         <p class="install-note reveal">Hesap açmak zorunlu değil. Arkadaşlık ve mesajlaşma gibi çevrimiçi özellikleri kullanmak istersen giriş yapabilirsin.</p>
+        <div class="more reveal">
+          <a class="btn" href="./kurulum/">Kurulum ve güvenlik rehberi</a>
+        </div>
       </div>
 
       <aside class="download-box reveal">
@@ -948,7 +956,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
     <div class="wrap">
       <div class="section-head reveal">
         <p class="section-label">Sürüm notları</p>
-        <h2 id="notesTitle">Son sürüm yükleniyor…</h2>
+        <h2 id="notesTitle">Son sürüm notları</h2>
         <p class="lead">Son güncellemede nelerin değiştiğini buradan görebilirsin.</p>
       </div>
 
@@ -958,7 +966,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
           <span id="releaseDate"></span>
         </div>
         <!-- İçerik GitHub sürüm notlarından geliyor; çeviri katmanı dokunmuyor. -->
-        <div class="release-body" id="notes" data-i18n-skip>…</div>
+        <div class="release-body" id="notes" data-i18n-skip>Sürüm notlarını GitHub üzerinden görüntüleyebilirsin.</div>
       </div>
     </div>
   </section>
@@ -969,6 +977,9 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
     <div class="foot">
       <span class="who">Haxora · Created by nycrox</span>
       <span class="grow"></span>
+      <a href="./ozellikler/">Özellikler</a>
+      <a href="./kurulum/">Kurulum</a>
+      <a href="./en/" hreflang="en" lang="en">English</a>
       <a href="https://github.com/nycr0x/Haxora-haxball-client">
     Haxora HaxBall Client on GitHub
 </a>
@@ -1110,6 +1121,9 @@ var HX_LANG = (function () {
     "Sürüm notları": "Release notes",
     "Son güncellemede nelerin değiştiğini buradan görebilirsin.": "See what changed in the latest update.",
     "Son sürüm": "Latest version",
+    "Son sürüm notları": "Latest release notes",
+    "Tüm özellikleri gör": "See all features",
+    "Kurulum ve güvenlik rehberi": "Install and safety guide",
     "Bu sürüm için not eklenmemiş.": "No notes were added for this release.",
     "Sürüm notlarını GitHub üzerinden görüntüleyebilirsin.": "You can read the release notes on GitHub.",
     "Haxora {0} indir": "Download Haxora {0}",
@@ -1225,7 +1239,7 @@ var HX_LANG = (function () {
     if (descriptionTag) descriptionTag.setAttribute("content", t(descriptionSource));
     var locale = document.querySelector('meta[property="og:locale"]');
     if (locale) locale.setAttribute("content", current === "en" ? "en_GB" : "tr_TR");
-    var pageUrl = "https://nycr0x.github.io/Haxora-haxball-client/" + (current === "en" ? "?lang=en" : "");
+    var pageUrl = "https://nycr0x.github.io/Haxora-haxball-client/" + (current === "en" ? "en/" : "");
     var canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.setAttribute("href", pageUrl);
     var ogUrl = document.querySelector('meta[property="og:url"]');
