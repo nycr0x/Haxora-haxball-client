@@ -4,15 +4,12 @@
 <meta charset="utf-8" />
 <meta name="google-site-verification" content="Now5xPxrOuB2wj3a2NfiiqLnlZWloico8uXRCIv5dWs" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Haxora — HaxBall Client for Windows | Next-Gen Client</title>
+<title>Haxora — Windows için Ücretsiz HaxBall Client</title>
 <meta name="description" content="Haxora, Windows için geliştirilmiş ücretsiz ve unofficial HaxBall client. Yüksek FPS, arkadaş listesi, özel mesajlaşma, Spotify kontrolü, Discord Rich Presence, gol efektleri, ayar paylaşımı ve daha fazlası." />
-<meta name="keywords" content="haxball client, haxora, haxball masaüstü client, haxball windows, haxball indir, haxball spotify, haxball discord rich presence, haxball gol efekti" />
 <meta name="author" content="nycrox" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 <meta name="theme-color" content="#203d50" />
 <link rel="canonical" href="https://nycr0x.github.io/Haxora-haxball-client/" />
-<!-- Sayfa iki dilli. Çeviri yerinde yapılıyor ama İngilizcenin paylaşılabilir
-     ve dizine girebilir kendi adresi olsun diye ?lang=en de kabul ediliyor. -->
 <link rel="alternate" hreflang="tr" href="https://nycr0x.github.io/Haxora-haxball-client/" />
 <link rel="alternate" hreflang="en" href="https://nycr0x.github.io/Haxora-haxball-client/en/" />
 <link rel="alternate" hreflang="x-default" href="https://nycr0x.github.io/Haxora-haxball-client/" />
@@ -23,13 +20,13 @@
 <meta property="og:locale" content="tr_TR" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nycr0x.github.io/Haxora-haxball-client/" />
-<meta property="og:title" content="Haxora — HaxBall Client for Windows | Next-Gen Client" />
+<meta property="og:title" content="Haxora — Windows için Ücretsiz HaxBall Client" />
 <meta property="og:description" content="Windows için ücretsiz HaxBall client: yüksek FPS, arkadaş listesi, özel mesajlaşma ve Spotify kontrolü. Haxora bağımsız bir Next-Gen Client projesidir." />
 <meta property="og:image" content="https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png" />
 <meta property="og:image:alt" content="Haxora logosu" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Haxora — HaxBall Client for Windows | Next-Gen Client" />
+<meta name="twitter:title" content="Haxora — Windows için Ücretsiz HaxBall Client" />
 <meta name="twitter:description" content="Windows için ücretsiz HaxBall client: yüksek FPS, arkadaş listesi, özel mesajlaşma ve Spotify kontrolü. Haxora bağımsız bir Next-Gen Client projesidir." />
 <meta name="twitter:image" content="https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png" />
 
@@ -627,7 +624,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
 .disclaimer { max-width: 760px; margin: 14px 0 0; color: #92aaba; font-size: 10.5px; line-height: 1.55; }
 
 .more { margin-top: 22px; }
-.reveal { opacity: 0; transform: translateY(9px); transition: opacity .45s ease, transform .45s ease; }
+.reveal { opacity: 1; transform: none; }
 .reveal.in { opacity: 1; transform: none; }
 :focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 
@@ -640,7 +637,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
 @media (max-width: 680px) {
   .wrap { width: min(100% - 24px, 1120px); }
   .topbar-inner { min-height: 56px; }
-  .nav a:not(.download-nav) { display: none; }
+  .nav a:not(.download-nav):not(.lang-btn) { display: none; }
   .hero-inner { gap: 34px; padding: 42px 0 48px; }
   .hero h1 { font-size: 39px; }
   .hero .sub { font-size: 14.5px; }
@@ -666,12 +663,11 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
   "applicationCategory": "GameApplication",
   "applicationSubCategory": "HaxBall client",
   "operatingSystem": "Windows 10, Windows 11",
-  "softwareVersion": "1.0.2",
+  "softwareVersion": "1.0.24",
   "url": "https://nycr0x.github.io/Haxora-haxball-client/",
   "downloadUrl": "https://github.com/nycr0x/Haxora-haxball-client/releases/latest",
   "installUrl": "https://github.com/nycr0x/Haxora-haxball-client/releases/latest",
   "image": "https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png",
-  "screenshot": "https://nycr0x.github.io/Haxora-haxball-client/site/Haxora_Icon.png",
   "description": "Haxora, HaxBall için geliştirilmiş bağımsız bir masaüstü istemcisidir. Kare hızı ve donanım hızlandırma denetimi, arkadaş listesi, özel mesajlaşma, yerel susturma, antrenman modu, maç kaydı, gol efektleri, kod ile ayar paylaşımı, oyun içi Spotify kontrolü ve Discord Rich Presence sunar. HaxBall ile resmi bir bağı yoktur.",
   "inLanguage": "tr",
   "isAccessibleForFree": true,
@@ -719,10 +715,10 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
       <a href="#sss">S.S.S.</a>
       <a href="#surum">Sürüm Notları</a>
       <a class="download-nav" href="#indir">İndir</a>
-      <button class="lang-btn" id="langToggle" type="button">
+      <a class="lang-btn" href="./en/" hreflang="en" lang="en" aria-label="Read in English">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M3.6 9.4h16.8M3.6 14.6h16.8"/><path d="M12 3.4c2.3 2.4 3.4 5.3 3.4 8.6s-1.1 6.2-3.4 8.6c-2.3-2.4-3.4-5.3-3.4-8.6S9.7 5.8 12 3.4Z"/></svg>
-        <span id="langCode">TR</span>
-      </button>
+        <span>EN</span>
+      </a>
     </nav>
   </div>
 </header>
@@ -751,11 +747,11 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
         </div>
 
         <div class="hero-meta" aria-label="Haxora bilgileri">
-          <span class="meta-pill">Windows 64-bit</span>
+          <span class="meta-pill">Windows 10 / 11 · 64-bit</span>
           <span class="meta-pill">Ücretsiz</span>
-          <span class="meta-pill">Kurulum gerektirmez</span>
+          <span class="meta-pill">Kurulumlu / taşınabilir</span>
           <span class="meta-pill">Unofficial</span>
-          <span class="meta-pill" id="heroVersion">Son sürüm</span>
+          <span class="meta-pill" id="heroVersion">v1.0.24</span>
         </div>
         <p class="hero-note">Haxora bağımsızdır. HaxBall ile resmi bir bağı veya onayı yoktur.</p>
       </div>
@@ -784,6 +780,29 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section soft" id="haxora-nedir">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-label">Haxora ile oynamak</p>
+        <h2>HaxBall için tek bir masaüstü uygulaması.</h2>
+        <p class="lead">Haxora, Windows üzerinde HaxBall oynamak için geliştirdiğim bağımsız bir client.
+          Oda bulma, arkadaşlarla iletişim, antrenman ve görünüm ayarlarını oyunla birlikte sunuyor.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature"><h3>Maça hazırlan</h3><p>Favori odalarına veya oda geçmişine bak.
+          Arkadaş listesinde kimin çevrimiçi olduğunu gör ve aynı odada buluş.</p></article>
+        <article class="feature"><h3>Kendi düzeninde oyna</h3><p>Tema ve tuş ayarlarını düzenle; istersen
+          gol efektlerini seç. Hazırladığın görünümü bir paylaşım koduyla arkadaşına gönder.</p></article>
+        <article class="feature"><h3>Maçtan sonra çalış</h3><p>Maç kayıtlarını tekrar izle veya antrenman
+          modunda şut ve pas çalış. Kendi sahanı yükleyerek aynı pozisyonu yeniden deneyebilirsin.</p></article>
+      </div>
+      <p class="install-note">Geliştirici: <a href="https://github.com/nycr0x">nycrox</a>.
+        Ayrıntılar için <a href="./ozellikler/">özellik rehberine</a>, indirme seçenekleri için
+        <a href="./kurulum/">kurulum rehberine</a> bakabilirsin.
+        Haxora, HaxBall'ın resmî uygulaması değildir.</p>
     </div>
   </section>
 
@@ -863,13 +882,13 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
         <div class="section-head reveal">
           <p class="section-label">Başlamak için</p>
           <h2>Haxora indir ve oyna. Üç adım. Hepsi bu.</h2>
-          <p class="lead">Kurulum sihirbazıyla uğraşmadan doğrudan başlayabilirsin.</p>
+          <p class="lead">Kurulum dosyasını kullan veya ZIP paketini çıkarıp taşınabilir sürümü aç.</p>
         </div>
 
         <ol class="steps">
           <!-- Sözcük sırası dile göre değiştiği için cümle tek parça çevriliyor. -->
-          <li class="reveal"><span class="n">1</span><div data-i18n-html><strong>Haxora.exe</strong> dosyasını indir.</div></li>
-          <li class="reveal"><span class="n">2</span><div>Dosyayı aç.</div></li>
+          <li class="reveal"><span class="n">1</span><div data-i18n-html><strong>Haxora-Setup.exe</strong> veya <strong>Haxora.zip</strong> paketini indir.</div></li>
+          <li class="reveal"><span class="n">2</span><div>Kurulumu tamamla veya ZIP paketini bir klasöre çıkarıp uygulamayı aç.</div></li>
           <li class="reveal"><span class="n">3</span><div>Oyuncu adını seç ve odaya gir.</div></li>
         </ol>
         <p class="install-note reveal">Hesap açmak zorunlu değil. Arkadaşlık ve mesajlaşma gibi çevrimiçi özellikleri kullanmak istersen giriş yapabilirsin.</p>
@@ -882,21 +901,22 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
         <div class="download-box-top">
           <img src="./site/Haxora_Icon.png" alt="Haxora logosu" />
           <div>
-            <strong id="releaseBoxTitle">Haxora</strong>
-            <span>Windows 64-bit</span>
+            <strong id="releaseBoxTitle">Haxora 1.0.24</strong>
+            <span>Windows 10 / 11 · 64-bit</span>
           </div>
         </div>
 
         <div class="release-meta">
-          <div><small>Sürüm</small><b id="boxVersion">—</b></div>
-          <div><small>Boyut</small><b id="boxSize">—</b></div>
-          <div><small>Yayın</small><b id="boxDate">—</b></div>
+          <div><small>Sürüm</small><b id="boxVersion">v1.0.24</b></div>
+          <div><small>Boyut</small><b id="boxSize">97.0 MB</b></div>
+          <div><small>Yayın</small><b id="boxDate">2026-10-10</b></div>
         </div>
 
         <a class="btn primary" id="download2" href="https://github.com/nycr0x/Haxora-haxball-client/releases/latest">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
           Haxora'yı indir
         </a>
+        <p class="install-note"><a href="https://github.com/nycr0x/Haxora-haxball-client/releases/latest">ZIP paketi ve tüm indirme seçenekleri</a></p>
       </aside>
     </div>
   </section>
@@ -916,7 +936,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
 
         <details class="reveal">
           <summary>Kurulum yapmak gerekiyor mu?</summary>
-          <p>Hayır. Haxora.exe dosyasını indirip doğrudan açman yeterli.</p>
+          <p>İki seçenek var: Haxora-Setup.exe ile kurabilir veya Haxora.zip paketini bir klasöre çıkarıp taşınabilir sürümü kullanabilirsin.</p>
         </details>
 
         <details class="reveal">
@@ -946,7 +966,7 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
 
         <details class="reveal">
           <summary>Hangi sistemlerde çalışıyor?</summary>
-          <p>Şu anda Windows 64-bit sürümü yayınlanıyor.</p>
+          <p>Şu anda Windows 10 / 11 · 64-bit sürümü yayınlanıyor.</p>
         </details>
       </div>
     </div>
@@ -956,17 +976,25 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
     <div class="wrap">
       <div class="section-head reveal">
         <p class="section-label">Sürüm notları</p>
-        <h2 id="notesTitle">Son sürüm notları</h2>
+        <h2 id="notesTitle">Haxora 1.0.24 sürüm notları</h2>
         <p class="lead">Son güncellemede nelerin değiştiğini buradan görebilirsin.</p>
       </div>
 
       <div class="release reveal">
         <div class="release-head">
-          <strong id="releaseTag">—</strong>
-          <span id="releaseDate"></span>
+          <strong id="releaseTag">v1.0.24</strong>
+          <span id="releaseDate">2026-10-10</span>
         </div>
         <!-- İçerik GitHub sürüm notlarından geliyor; çeviri katmanı dokunmuyor. -->
-        <div class="release-body" id="notes" data-i18n-skip>Sürüm notlarını GitHub üzerinden görüntüleyebilirsin.</div>
+        <div class="release-body" id="notes" data-i18n-skip>- Electron 44&#x27;e geçildi.
+- Maç Merkezi (Beta): son maçlarını izle, kayıt dosyası aç, yediğin gollerdeki hatalarını gör. Kayıt İzleme ile Analizci birleşti.
+- Otomatik maç kaydı: oynadığın son 3 maç kendiliğinden saklanıyor.
+- Antrenmanda canlı maçın skoru belirgin; maç bitince uyarı çıkıyor.
+- Otomatik katılmada odaya girince kısa bir ses çalıyor.
+- Canlı oyun resmî HaxBall motorunda çalışıyor.
+
+Haxora-Setup.exe SHA256: `f4fefd9a4efc89004421516dca4a52b673cf3e4e939f4364db4b6e9b070026e4`
+Haxora.zip SHA256: `b3803ace607c08c2c269e9417d1d5777324d5fc325d908f582228ded392f4e1b`</div>
       </div>
     </div>
   </section>
@@ -981,426 +1009,16 @@ footer { padding: 30px 0 42px; background: var(--navy-2); color: #d5e3eb; }
       <a href="./kurulum/">Kurulum</a>
       <a href="./en/" hreflang="en" lang="en">English</a>
       <a href="https://github.com/nycr0x/Haxora-haxball-client">
-    Haxora HaxBall Client on GitHub
+    GitHub projesi ve sürümler
 </a>
-         <p>
-  Haxora is an unofficial HaxBall desktop client for Windows.
-  View the Haxora source repository and releases on GitHub.
-</p>
+
     </div>
     <p class="disclaimer">Haxora unofficial ve bağımsız bir projedir. HaxBall ile resmi bir bağlantısı, ortaklığı, desteği veya onayı yoktur. “HaxBall” adı ve ilgili haklar sahiplerine aittir.</p>
   </div>
 </footer>
 
-<script>
-/* Sayfanın dili (Türkçe / İngilizce).
 
-   Uygulamadaki çözümün aynısı, tek dosyaya sığacak kadar küçültülmüş hâli:
-   sözlüğün anahtarı sayfadaki Türkçe metnin kendisi. Türkçe seçiliyken sözlük
-   hiç okunmuyor, İngilizce seçilince gövdedeki metin düğümleri ve çevrilebilir
-   öznitelikler bir kez taranıp değiştiriliyor. Her düğümün kaynağı saklandığı
-   için geçiş iki yönlü çalışıyor.
 
-   Dil sırayla şuradan geliyor: ?lang=en adresi > önceki seçim > Türkçe.
-   Seçim adrese de yazılıyor; böylece İngilizce sürümün paylaşılabilir bir
-   bağlantısı oluyor (head'deki hreflang bunu gösteriyor). */
-var HX_LANG = (function () {
-  var EN = {
-    /* head */
-    "Haxora — HaxBall Client for Windows | Next-Gen Client": "Haxora — HaxBall Client for Windows | Next-Gen Client",
-    "Haxora, Windows için geliştirilmiş ücretsiz ve unofficial HaxBall client. Yüksek FPS, arkadaş listesi, özel mesajlaşma, Spotify kontrolü, Discord Rich Presence, gol efektleri, ayar paylaşımı ve daha fazlası.":
-      "Haxora is a free, unofficial HaxBall client for Windows. High FPS, a friend list, private messages, Spotify controls, Discord Rich Presence, goal effects, shareable settings and more.",
-
-    /* üst şerit */
-    "Haxora ana sayfa": "Haxora home",
-    "Haxora logosu": "Haxora logo",
-    "Next-Gen Client": "Next-Gen Client",
-    "Ana menü": "Main menu",
-    "Özellikler": "Features",
-    "Kurulum": "Install",
-    "S.S.S.": "FAQ",
-    "Sürüm Notları": "Release notes",
-    "İndir": "Download",
-    "Arayüz dilini değiştir": "Change the site language",
-
-    /* giriş bölümü */
-    "Haxora,": "Haxora,",
-    "Haxora indir ve oyna. Üç adım. Hepsi bu.": "Download and play Haxora. Three steps. That is all.",
-    "Haxora ve HaxBall client hakkında merak edilenler.": "Questions about Haxora and the HaxBall client.",
-    "Next-Gen Client.": "Next-Gen Client.",
-    "Ücretsiz HaxBall Client.": "Free HaxBall Client.",
-    "Haxora, Windows için geliştirilmiş ücretsiz ve unofficial bir HaxBall client, yani HaxBall masaüstü istemcisidir. Odalara girmeyi, arkadaşlarını takip etmeyi ve oyunu kendi zevkine göre ayarlamayı tek yerde toplar. İndir, aç ve oyna.":
-      "Haxora is a free, unofficial HaxBall client for Windows, a desktop app for playing HaxBall. Joining rooms, keeping up with your friends and tuning the game to your taste, all in one place. Download it, open it, play.",
-    "Windows için indir": "Download for Windows",
-    "Sürümlere bak": "Browse releases",
-    "Haxora bilgileri": "Haxora at a glance",
-    "Windows 64-bit": "Windows 64-bit",
-    "Ücretsiz": "Free",
-    "Kurulum gerektirmez": "No installer",
-    "Unofficial": "Unofficial",
-    "Son sürüm yükleniyor…": "Loading the latest version…",
-    "Haxora bağımsızdır. HaxBall ile resmi bir bağı veya onayı yoktur.":
-      "Haxora is independent. It has no official affiliation with HaxBall, nor its endorsement.",
-    "HaxBall sahasında hareket eden oyuncular ve top ile Haxora görseli":
-      "Illustration of Haxora with players and a ball moving on a HaxBall pitch",
-    "Mavi": "Blue",
-    "Kırmızı": "Red",
-
-    /* özellikler */
-    "HaxBall client özellikleri: ihtiyacın olan şeyler, tek yerde.": "HaxBall client features: everything you need, in one place.",
-    "Gösterişli özellik listeleri yerine günlük kullanımda gerçekten işine yarayan şeylere odaklanır.":
-      "Instead of a flashy feature list, it focuses on the things you actually use every day.",
-    "Arkadaşların nerede?": "Where are your friends?",
-    "Kimin çevrimiçi olduğunu ve hangi odada oynadığını gör. İstersen tek tıkla yanına katıl.":
-      "See who is online and which room they are playing in. Join them with a single click.",
-    "Özel mesaj": "Private messages",
-    "Odadan bağımsız konuş. Arkadaşın çevrimdışıysa mesajın onu bekler.":
-      "Talk independently of the room. If your friend is offline, your message waits for them.",
-    "Oda istatistikleri": "Room stats",
-    "Gol, asist, süre ve galibiyetlerini oynadığın odalara göre takip et.":
-      "Track your goals, assists, time played and wins room by room.",
-    "Görünüm ve gol efektleri": "Looks and goal effects",
-    "Top, saha, forma ve skor tabelasını kendi ekranında düzenle. Attığın ve yediğin gol için ayrı görsel efekt seç.":
-      "Set the ball, the pitch, the kits and the scoreboard how you like them, on your screen only. Pick a separate visual effect for goals you score and goals you concede.",
-    "Antrenman & kayıt": "Training & recording",
-    "Tek başına çalış, kendi sahanı yükle ve maç kayıtlarını daha sonra tekrar aç.":
-      "Practise on your own, load your own pitch, and reopen your match recordings later.",
-    "Ayarların seninle": "Your settings follow you",
-    "Hesap kullanırsan profilin ve tercihlerin diğer bilgisayarında da hazır olur.":
-      "With an account, your profile and preferences are waiting on your other computer too.",
-    "Spotify kontrolü": "Spotify controls",
-    "Çalan şarkıyı maçtan çıkmadan başlat, duraklat ya da geç. Alt-tab yok, kaçan top yok.":
-      "Play, pause or skip the current track without leaving the match. No alt-tab, no ball lost while you do it.",
-    "Discord Rich Presence": "Discord Rich Presence",
-    "Sen oynarken Discord profilinde Haxora'da olduğun görünür.":
-      "While you play, your Discord profile shows that you are on Haxora.",
-    "Ayarını paylaş": "Share your setup",
-    "Tema, görünüm ve tuş atamalarını koda çevirip arkadaşına yolla. Sana gelen kodu yapıştır, onun düzeni sende açılsın.":
-      "Turn your theme, looks and key bindings into a code and send it to a friend. Paste a code you receive and their setup opens on your side.",
-
-    /* kurulum */
-    "Başlamak için": "Getting started",
-    "Üç adım. Hepsi bu.": "Three steps. That's all.",
-    "Kurulum sihirbazıyla uğraşmadan doğrudan başlayabilirsin.": "No setup wizard to sit through — you can start straight away.",
-    "<strong>Haxora.exe</strong> dosyasını indir.": "Download <strong>Haxora.exe</strong>.",
-    "Dosyayı aç.": "Open the file.",
-    "Oyuncu adını seç ve odaya gir.": "Pick a player name and join a room.",
-    "Hesap açmak zorunlu değil. Arkadaşlık ve mesajlaşma gibi çevrimiçi özellikleri kullanmak istersen giriş yapabilirsin.":
-      "An account is optional. Sign in only if you want the online features, such as friends and messaging.",
-    "Sürüm": "Version",
-    "Boyut": "Size",
-    "Yayın": "Released",
-    "Haxora'yı indir": "Download Haxora",
-
-    /* sık sorulanlar */
-    "Sık sorulanlar": "FAQ",
-    "Kısaca merak edilenler.": "The short answers.",
-    "Haxora tam olarak ne?": "What exactly is Haxora?",
-    "HaxBall'ı masaüstünden açmanı sağlayan bağımsız ve unofficial bir client. Oyunun yanına arkadaş listesi, mesajlaşma, istatistik ve kişiselleştirme gibi ek özellikler getirir.":
-      "An independent, unofficial client that lets you open HaxBall from your desktop. Alongside the game it adds a friend list, messaging, stats and customisation.",
-    "Kurulum yapmak gerekiyor mu?": "Do I need to install anything?",
-    "Hayır. Haxora.exe dosyasını indirip doğrudan açman yeterli.": "No. Download Haxora.exe and open it — that's it.",
-    "Hesap açmak zorunda mıyım?": "Do I have to create an account?",
-    "Hayır. Hesap; arkadaş listesi, özel mesajlaşma ve ayar senkronizasyonu gibi çevrimiçi özellikler için kullanılır.":
-      "No. An account is only used for the online features: the friend list, private messages and settings sync.",
-    "HaxBall ile resmi bir bağı var mı?": "Is it officially connected to HaxBall?",
-    "Hayır. Haxora unofficial bir projedir; HaxBall ile resmi bir bağlantısı veya onayı yoktur.":
-      "No. Haxora is an unofficial project with no official connection to HaxBall, nor its endorsement.",
-    "Ücretli mi?": "Does it cost anything?",
-    "Hayır. Haxora ücretsizdir.": "No. Haxora is free.",
-    "Spotify için hesabımı bağlamam gerekiyor mu?": "Do I need to connect my Spotify account?",
-    "Evet, kontrol tuşlarının çalışması için Spotify hesabını bir kez bağlaman yeterli. Haxora yalnızca oynatmayı yönetir; şifreni görmez.":
-      "Yes — connect your Spotify account once and the controls work from then on. Haxora only handles playback; it never sees your password.",
-    "Ayarlarımı arkadaşıma nasıl gönderirim?": "How do I send my settings to a friend?",
-    "Ayarlar ekranından paylaşım kodunu oluştur ve arkadaşına yolla. O kodu yapıştırdığında senin temanı, görünüm ayarlarını ve tuş atamalarını kendi Haxora'sında açar.":
-      "Generate a share code in Settings and send it over. When your friend pastes it, your theme, looks and key bindings open in their own Haxora.",
-    "Hangi sistemlerde çalışıyor?": "Which systems does it run on?",
-    "Şu anda Windows 64-bit sürümü yayınlanıyor.": "Right now a Windows 64-bit build is published.",
-
-    /* sürüm notları ve alt bilgi */
-    "Sürüm notları": "Release notes",
-    "Son güncellemede nelerin değiştiğini buradan görebilirsin.": "See what changed in the latest update.",
-    "Son sürüm": "Latest version",
-    "Son sürüm notları": "Latest release notes",
-    "Tüm özellikleri gör": "See all features",
-    "Kurulum ve güvenlik rehberi": "Install and safety guide",
-    "Bu sürüm için not eklenmemiş.": "No notes were added for this release.",
-    "Sürüm notlarını GitHub üzerinden görüntüleyebilirsin.": "You can read the release notes on GitHub.",
-    "Haxora {0} indir": "Download Haxora {0}",
-    "Haxora · Created by nycrox": "Haxora · Created by nycrox",
-    "GitHub": "GitHub",
-    "Haxora unofficial ve bağımsız bir projedir. HaxBall ile resmi bir bağlantısı, ortaklığı, desteği veya onayı yoktur. “HaxBall” adı ve ilgili haklar sahiplerine aittir.":
-      "Haxora is an unofficial, independent project. It has no official connection, partnership, support or endorsement from HaxBall. The “HaxBall” name and related rights belong to their owners."
-  };
-
-  var STORE_KEY = "haxora.site.lang";
-  var ATTRS = ["title", "alt", "aria-label", "placeholder"];
-  var listeners = [];
-  var sources = new WeakMap();   // düğüm -> { src, out }
-  var current = resolve();
-
-  function stored() {
-    try { return localStorage.getItem(STORE_KEY); } catch (e) { return null; }
-  }
-
-  function resolve() {
-    var query = "";
-    try { query = new URLSearchParams(location.search).get("lang") || ""; } catch (e) {}
-    if (query === "en" || query === "tr") return query;
-    var saved = stored();
-    if (saved === "en" || saved === "tr") return saved;
-    return "tr";
-  }
-
-  /* Metin düğümleri girintiden dolayı satır sonu ve boşluk taşıyor; sözlükte
-     tek satır hâlleri duruyor. Baştaki ve sondaki boşluk korunuyor: bir
-     başlığın içinde "Haxora, " metninden sonra <span> geliyor ve o boşluk
-     kaybolursa iki sözcük birbirine yapışır. */
-  function t(text) {
-    if (current !== "en" || typeof text !== "string" || !text) return text;
-    var key = text.replace(/\s+/g, " ").trim();
-    if (!key) return text;
-    var hit = EN[key];
-    if (hit === undefined) return text;
-    return text.match(/^\s*/)[0] + hit + text.match(/\s*$/)[0];
-  }
-
-  function fill(template) {
-    var values = Array.prototype.slice.call(arguments, 1);
-    return t(template).replace(/\{(\d+)\}/g, function (m, i) {
-      return values[Number(i)] === undefined ? "" : String(values[Number(i)]);
-    });
-  }
-
-  function swapText(node) {
-    var value = node.nodeValue;
-    if (!value || !value.trim()) return;
-    var state = sources.get(node);
-    var source = state && state.out === value ? state.src : value;
-    var next = t(source);
-    if (next === value) return;
-    sources.set(node, { src: source, out: next });
-    node.nodeValue = next;
-  }
-
-  function swapAttr(element, name) {
-    var value = element.getAttribute(name);
-    if (!value || !value.trim()) return;
-    var bag = sources.get(element) || {};
-    var state = bag[name];
-    var source = state && state.out === value ? state.src : value;
-    var next = t(source);
-    if (next === value) return;
-    bag[name] = { src: source, out: next };
-    sources.set(element, bag);
-    element.setAttribute(name, next);
-  }
-
-  /* Bir cümlenin içinde biçimlendirme varsa ve sözcük sırası dile göre
-     değişiyorsa parça parça çeviri işe yaramıyor: "<strong>Haxora.exe</strong>
-     dosyasını indir." İngilizcede "Download <strong>Haxora.exe</strong>."
-     oluyor. Böyle yerlerde data-i18n-html işareti duruyor ve anahtar
-     elemanın kendi içeriği oluyor. Sözlükten geldiği için içerik güvenli. */
-  function swapHtml(element) {
-    var value = element.innerHTML;
-    var state = sources.get(element);
-    var source = state && state.out === value ? state.src : value;
-    var next = t(source);
-    if (next === value) return;
-    sources.set(element, { src: source, out: next });
-    element.innerHTML = next;
-  }
-
-  function sweep() {
-    var blocks = document.querySelectorAll("[data-i18n-html]");
-    for (var b = 0; b < blocks.length; b++) swapHtml(blocks[b]);
-
-    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT, {
-      acceptNode: function (node) {
-        if (node.nodeType !== 1) return NodeFilter.FILTER_ACCEPT;
-        if (node.hasAttribute("data-i18n-skip") || node.hasAttribute("data-i18n-html")) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
-    });
-    var node;
-    while ((node = walker.nextNode())) {
-      if (node.nodeType === 3) swapText(node);
-      else for (var i = 0; i < ATTRS.length; i++) if (node.hasAttribute(ATTRS[i])) swapAttr(node, ATTRS[i]);
-    }
-  }
-
-  var titleSource = document.title;
-  var descriptionTag = document.querySelector('meta[name="description"]');
-  var descriptionSource = descriptionTag ? descriptionTag.getAttribute("content") : "";
-
-  function apply() {
-    document.documentElement.setAttribute("lang", current);
-    document.title = t(titleSource);
-    if (descriptionTag) descriptionTag.setAttribute("content", t(descriptionSource));
-    var locale = document.querySelector('meta[property="og:locale"]');
-    if (locale) locale.setAttribute("content", current === "en" ? "en_GB" : "tr_TR");
-    var pageUrl = "https://nycr0x.github.io/Haxora-haxball-client/" + (current === "en" ? "en/" : "");
-    var canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) canonical.setAttribute("href", pageUrl);
-    var ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.setAttribute("content", pageUrl);
-    sweep();
-    var code = document.getElementById("langCode");
-    var button = document.getElementById("langToggle");
-    if (code) code.textContent = current === "en" ? "EN" : "TR";
-    if (button) {
-      /* İpucu dillerin kendi adlarıyla: iki arayüzde de aynı şeyi anlatıyor. */
-      var flow = current === "en" ? "English → Türkçe" : "Türkçe → English";
-      button.title = flow;
-      button.setAttribute("aria-label", t("Arayüz dilini değiştir") + ": " + flow);
-    }
-    for (var i = 0; i < listeners.length; i++) {
-      try { listeners[i](current); } catch (e) {}
-    }
-  }
-
-  function set(next) {
-    if (next !== "en" && next !== "tr") return;
-    if (next === current) return;
-    current = next;
-    try { localStorage.setItem(STORE_KEY, current); } catch (e) {}
-    /* Adres de seçimi taşısın: sayfayı paylaşan kişi dilini de paylaşmış olur.
-       Türkçe varsayılan olduğu için parametre yalnızca İngilizcede duruyor. */
-    try {
-      var url = new URL(location.href);
-      if (current === "en") url.searchParams.set("lang", "en");
-      else url.searchParams.delete("lang");
-      history.replaceState(null, "", url.pathname + (url.search || "") + url.hash);
-    } catch (e) {}
-    apply();
-  }
-
-  function start() {
-    var button = document.getElementById("langToggle");
-    if (button) button.addEventListener("click", function () { set(current === "en" ? "tr" : "en"); });
-    apply();
-  }
-
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
-  else start();
-
-  return {
-    t: t,
-    fill: fill,
-    lang: function () { return current; },
-    dateLocale: function () { return current === "en" ? "en-GB" : "tr-TR"; },
-    onChange: function (cb) { if (typeof cb === "function") listeners.push(cb); }
-  };
-})();
-</script>
-
-<script>
-(function () {
-  var REPO = "nycr0x/Haxora-haxball-client";
-
-  var download = document.getElementById("download");
-  var download2 = document.getElementById("download2");
-  var label = document.getElementById("downloadLabel");
-  var heroVersion = document.getElementById("heroVersion");
-  var notes = document.getElementById("notes");
-  var notesTitle = document.getElementById("notesTitle");
-  var releaseTag = document.getElementById("releaseTag");
-  var releaseDate = document.getElementById("releaseDate");
-  var releaseBoxTitle = document.getElementById("releaseBoxTitle");
-  var boxVersion = document.getElementById("boxVersion");
-  var boxSize = document.getElementById("boxSize");
-  var boxDate = document.getElementById("boxDate");
-
-  function mb(bytes) { return (bytes / 1048576).toFixed(1) + " MB"; }
-
-  /* Sürüm bilgisi tek yerde çiziliyor: hem GitHub yanıtı geldiğinde hem de
-     dil değiştiğinde aynı işlev çalışıyor, yoksa dili değiştiren kişi indirme
-     düğmesinin eski dilde kalmış hâlini görürdü. */
-  var latest = null;
-  var failed = false;
-
-  function renderRelease() {
-    if (failed) {
-      heroVersion.textContent = HX_LANG.t("Son sürüm");
-      notesTitle.textContent = HX_LANG.t("Sürüm notları");
-      notes.textContent = HX_LANG.t("Sürüm notlarını GitHub üzerinden görüntüleyebilirsin.");
-      return;
-    }
-    if (!latest) return;
-
-    var version = String(latest.tag_name || "").replace(/^v/i, "");
-    var assets = Array.isArray(latest.assets) ? latest.assets : [];
-    var exe = assets.filter(function (a) { return /\.exe$/i.test(a.name || ""); })[0];
-    var published = latest.published_at
-      ? new Date(latest.published_at).toLocaleDateString(HX_LANG.dateLocale(), { day: "numeric", month: "short", year: "numeric" })
-      : "—";
-
-    if (exe) {
-      download.href = exe.browser_download_url;
-      download2.href = exe.browser_download_url;
-    }
-
-    label.textContent = version ? HX_LANG.fill("Haxora {0} indir", version) : HX_LANG.t("Windows için indir");
-    heroVersion.textContent = version ? "v" + version : HX_LANG.t("Son sürüm");
-    releaseBoxTitle.textContent = version ? "Haxora " + version : "Haxora";
-    boxVersion.textContent = version ? "v" + version : "—";
-    boxSize.textContent = exe ? mb(exe.size) : "—";
-    boxDate.textContent = published;
-
-    notesTitle.textContent = version ? "Haxora " + version : HX_LANG.t("Sürüm notları");
-    releaseTag.textContent = latest.tag_name || HX_LANG.t("Son sürüm");
-    releaseDate.textContent = published;
-
-    var body = String(latest.body || "").replace(/\[zorunlu\]/gi, "").trim();
-    notes.textContent = body || HX_LANG.t("Bu sürüm için not eklenmemiş.");
-
-    // Keep the HaxBall client name when release data and language change.
-    document.title = "Haxora" + (version ? " " + version : "") + " — HaxBall Client for Windows | Next-Gen Client";
-    var appSchema = document.querySelector('script[type="application/ld+json"]');
-    if (appSchema && version) {
-      try {
-        var appData = JSON.parse(appSchema.textContent);
-        appData.softwareVersion = version;
-        appSchema.textContent = JSON.stringify(appData, null, 2);
-      } catch (error) { /* Preserve release rendering if metadata cannot be parsed. */ }
-    }
-  }
-
-  HX_LANG.onChange(renderRelease);
-
-  fetch("https://api.github.com/repos/" + REPO + "/releases/latest", {
-    headers: { Accept: "application/vnd.github+json" }
-  })
-    .then(function (response) {
-      if (!response.ok) throw new Error("GitHub " + response.status);
-      return response.json();
-    })
-    .then(function (release) {
-      latest = release;
-      renderRelease();
-    })
-    .catch(function () {
-      failed = true;
-      renderRelease();
-    });
-})();
-
-(function () {
-  var items = document.querySelectorAll(".reveal");
-  if (!("IntersectionObserver" in window)) {
-    items.forEach(function (item) { item.classList.add("in"); });
-    return;
-  }
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("in");
-      observer.unobserve(entry.target);
-    });
-  }, { rootMargin: "0px 0px -8% 0px", threshold: .08 });
-
-  items.forEach(function (item) { observer.observe(item); });
-})();
-</script>
+<script src="./site/home.js" defer></script>
 </body>
 </html>
